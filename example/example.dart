@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
+// ![Flutter logo](https://flutter.io/images/flutter-mark-square-100.png#100x100)
 const String _markdownData = """# Markdown Example
 Markdown allows you to easily include formatted text, images, and even formatted Dart code in your app.
 
@@ -22,7 +23,7 @@ You can use [hyperlinks](hyperlink) in markdown
 
 You can include images:
 
-![Flutter logo](https://flutter.io/images/flutter-mark-square-100.png#100x100)
+
 
 ## Markdown widget
 
@@ -48,10 +49,8 @@ Enjoy!
 
 void main() {
   runApp(new MaterialApp(
-    title: "Markdown Demo",
-    home: new Scaffold(
-      appBar: new AppBar(title: const Text('Markdown Demo')),
-      body: const Markdown(data: _markdownData)
-    )
-  ));
+      title: "Markdown Demo",
+      home: new Scaffold(
+          appBar: new AppBar(title: const Text('Markdown Demo')),
+          body: const Markdown(data: _markdownData))));
 }
